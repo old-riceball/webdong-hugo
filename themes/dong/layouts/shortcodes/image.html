@@ -1,0 +1,56 @@
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+    {{- if .Get "link" -}}
+        <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    {{- end -}}
+
+    {{ $img := .Get "src" }}
+    
+    
+
+    <img class="m-0" src="{{ $.Site.Params.cloudinaryImg }}/dpr_auto,f_auto,q_auto/{{ $.Page.Section }}/{{ $.Page.File.ContentBaseName }}/{{ path.Base $img }}"
+
+        srcset="
+        {{ $.Site.Params.cloudinaryImg }}/w_300,dpr_auto,f_auto,q_auto/{{ $.Page.Section }}/{{ $.Page.File.ContentBaseName }}/{{ path.Base $img }}   300w,
+        {{ $.Site.Params.cloudinaryImg }}/w_600,dpr_auto,f_auto,q_auto/{{ $.Page.Section }}/{{ $.Page.File.ContentBaseName }}/{{ path.Base $img }}   600w,
+        {{ $.Site.Params.cloudinaryImg }}/w_900,dpr_auto,f_auto,q_auto/{{ $.Page.Section }}/{{ $.Page.File.ContentBaseName }}/{{ path.Base $img }}   900w,
+        {{ $.Site.Params.cloudinaryImg }}/w_1200,dpr_auto,f_auto,q_auto/{{ $.Page.Section }}/{{ $.Page.File.ContentBaseName }}/{{ path.Base $img }} 1200w
+        "
+
+        {{- if or (.Get "alt") (.Get "caption") }}
+        alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+        {{- end -}}
+
+
+        {{ $width := .Get "width" }}
+        {{ $height := .Get "height" }}
+        {{ $remoteImg := resources.GetRemote $img }}
+        {{ $remoteImgWidth := $remoteImg.Width }}
+        {{ $remoteImgHeight := $remoteImg.Height }}
+
+
+        {{- with .Get "width" }} width="{{ with $width }}{{ $width }}{{ else }}{{ $remoteImgWidth }}{{end}}"{{ end -}}
+        {{- with .Get "height" }} height="{{ with $height }}{{ $height }}{{ else }}{{ $remoteImgHeight }}{{end}}"{{ end -}}
+
+
+        loading="{{- with .Get "loading" -}}{{ . }}{{ else }}lazy{{ end -}}"
+
+        sizes="(min-width: 1040px) 50vw, 100vw"
+         
+    /><!-- Closing img tag -->
+    {{- if .Get "link" }}</a>{{ end -}}
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+        <figcaption class="inline-block float-none w-full text-center sm:text-right sm:float-right ">
+            {{ with (.Get "title") -}}
+                {{ . }}
+            {{- end -}}
+            {{- if or (.Get "caption") (.Get "attr") -}}<p class="inline-block w-full p-0 m-0 mb-4 sm:mx-8">
+                {{- .Get "caption" | markdownify -}}
+                {{- with .Get "attrlink" }}
+                    <a href="{{ . }}">
+                {{- end -}}
+                {{- .Get "attr" | markdownify -}}
+                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+            {{- end }}
+        </figcaption>
+    {{- end }}
+</figure>

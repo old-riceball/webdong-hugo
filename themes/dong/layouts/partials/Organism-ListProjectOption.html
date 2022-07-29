@@ -1,0 +1,47 @@
+<h2 class="p-8 py-4 bg-stone-100 gsap-list">
+    專案標籤
+    {{ if not (eq .Title "project") }}
+        (搜尋：{{ .Title }})
+    {{ end }}
+
+</h2>
+<div class="p-8 gsap-list">
+    <!-- !If project is not empty -->
+    {{ if ne (len $.Site.Taxonomies.project) 0 }}
+        <div class="-ml-2">
+            <!-- Fetch current title & sectionName -->
+            {{ $currentTitle := .Title | lower }}
+            {{ $currentSection := .Section }}
+            {{ $target := "project" }}
+
+            {{/* Show "All option" when --- */}}
+            {{/* 1. Is NOT in project index page */}}
+            {{ if not (eq $currentSection $currentTitle) }}
+                <a
+                    class="relative inline-block p-4 py-1 text-2xl capitalize"
+                    href="{{ print "/" $target "/" | relURL }}"
+                >
+                    All
+                </a>
+            {{ end }}
+
+            {{/* Loop thought options */}}
+            {{ range $name, $taxonomy := ($.Site.Taxonomies.project) }}
+                {{ $tagCount := len $taxonomy.Pages }}
+                {{ if not (eq $name $currentTitle) }}
+                    <a
+                        class="relative inline-block p-4 py-1 text-2xl capitalize group"
+                        href="{{ "/project/" | relURL }}{{ $name | urlize }}"
+                    >
+                        {{- $name -}}
+                        <sup
+                            class="absolute top-0 right-0 text-sm group-focus:opacity-0"
+                            >{{- $tagCount -}}</sup
+                        >
+                    </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    {{ end }}
+
+</div>

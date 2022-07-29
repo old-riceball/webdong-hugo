@@ -1,0 +1,124 @@
+theme = "dong"
+# Params
+[Params]
+brand = 'Triangle Dong Dong'
+brandtc = '三角東東'
+brandLogo = '◢◢◢'
+brandUrl = 'https://www.tridong.com/'
+brandUrlShort = 'tridong.com'
+brandEmail = 'triangledongdong@gmail.com'
+brandPhone = '09-3636-1996'
+brandLocation = 'No. 129, Section 3, Sanmin Rd, North District, Taichung City, 404'
+brandLocationtc = '臺中市北區三民路三段129號'
+brandWorktime = '營業時間 9:30am - 18:30pm'
+
+googleAnalytics = 'G-FS2XJ14995'
+
+brandYoutube = 'https://www.youtube.com/channel/UCIFYY0VUOND2tBdC2YDpKkQ'
+brandInstagram = 'https://www.instagram.com/triangle_dongdong'
+brandBehance = 'https://www.behance.net/triangledongdong2020'
+
+slogan = "專業的角度有趣地玩設計"
+brandDescription = "創立於2020年，三角東東 Triangle Dong Dong 是一個專注於品牌設計的新創設計公司。 "
+
+
+testimg = 'https://ucarecdn.com/16d84bf3-b31e-4a87-a82a-566364a85030/'
+
+# Pagination
+paginate = 10
+PaginatePath = ""
+
+imgsm = '-/smart_resize/300x300/'
+imgmd = '-/smart_resize/600x600/'
+imglg = '-/smart_resize/900x900/'
+imgxl = '-/smart_resize/1200x1200/'
+
+imgResize = '-/smart_resize/'
+imgAuto = '-/format/auto/'
+
+imgProgress = '-/progressive/yes/'
+
+cloudinaryImg = "https://res.cloudinary.com/tridong/image/upload"
+cloudinaryVideo = ""
+
+# Navbar
+[menu]
+[[menu.main]]
+  # Identifier must match the section name
+  identifier = 'home'
+  name = '首頁'
+  title = '三角東東首頁'
+  url = '/'
+  weight = 1
+[[menu.main]]
+  identifier = 'about'
+  name = '關於'
+  title = '關於三角東東'
+  url = '/about/'
+  weight = 2
+[[menu.main]]
+  identifier = 'post'
+  name = '文章'
+  title = '查看部落格文章'
+  url = '/post/'
+  weight = 3
+[[menu.main]]
+  identifier = 'project'
+  name = '專案'
+  title = '查看專案作品'
+  url = '/Project/'
+  weight = 4
+
+# Sitemap
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Taxonomy
+[taxonomies]
+  category = "category"
+  tag = "tag"
+  project = "project"
+
+baseURL = '/'
+languageCode = 'en-us'
+
+
+# Markup Engine
+enableEmoji = true
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'dracula'
+    tabWidth = 4
+
+
+  [markup.tableOfContents]
+    endLevel = 4
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+
+
+
+[server]
+[[server.headers]]
+  for = '/*'
+  [server.headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    Content-Security-Policy = "'default-src' 'self' data: 'unsafe-eval' 'unsafe-inline' www.google-analytics.com www.googletagmanager.com https://i.imgur.com https://res.cloudinary.com www.youtube-nocookie.com www.youtube.com "

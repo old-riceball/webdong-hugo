@@ -1,0 +1,3 @@
+[submodule "themes/dong"]
+	path = themes/dong
+	url = https://github.com/riceball-tw/Dong.git

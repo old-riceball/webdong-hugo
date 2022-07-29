@@ -1,0 +1,55 @@
+{{ $type := .Get "type" }}
+{{ $cite := .Get "cite" }}
+{{ $citeSrc := .Get "citeSrc" }}
+
+{{ $class := newScratch }}
+
+{{ if eq $type "success" }}
+    {{ $class.Add "colorDarkest" "border-green-300" }}
+    {{ $class.Add "colorDarker" "bg-green-200" }}
+    {{ $class.Add "color" "bg-green-50" }}
+    {{ $class.Add "title" "成功" }}
+{{ end }}
+
+{{ if eq $type "warning" }}
+    {{ $class.Add "colorDarkest" "border-yellow-300" }}
+    {{ $class.Add "colorDarker" "bg-yellow-200" }}
+    {{ $class.Add "color" "bg-yellow-50" }}
+{{ end }}
+
+{{ if eq $type "danger" }}
+    {{ $class.Add "colorDarkest" "border-red-300" }}
+    {{ $class.Add "colorDarker" "bg-red-200" }}
+    {{ $class.Add "color" "bg-red-50" }}
+{{ end }}
+
+{{ if eq $type "info" }}
+    {{ $class.Add "colorDarkest" "border-blue-300" }}
+    {{ $class.Add "colorDarker" "bg-blue-200" }}
+    {{ $class.Add "color" "bg-blue-50" }}
+{{ end }}
+
+{{ if $cite }}
+    <figure class="relative my-16 font-serif font-bold text-center">
+        <blockquote>
+            <p class="mx-auto text-2xl tracking-wider">
+                {{ .Inner | .Page.RenderString }}
+            </p>
+        </blockquote>
+        <figcaption>
+            <cite class="transition-opacity opacity-60 hover:opacity-100">
+                <a href="{{ with $citeSrc }}{{ . }}{{ end }}"
+                    >From —— {{ with $cite }}{{ . }}{{ end }}</a
+                >
+            </cite>
+        </figcaption>
+    </figure>
+{{ else }}
+    <blockquote
+        class=" text-lg p-2 md:p-16 text-left md:text-center relative {{ $class.Get "color" }}"
+    >
+        <div class="text-2xl">
+            {{ .Inner | .Page.RenderString }}
+        </div>
+    </blockquote>
+{{ end }}

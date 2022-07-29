@@ -1,0 +1,23 @@
+{{ define "main" }}
+    <div class="grid grid-auto lg:grid-cols-2">
+        <div class="border-r bg-stone-100 lg:bg-stone-50 border-stone-200">
+            <h1 class="p-8 text-2xl leading-relaxed prose text-current">
+                {{ $defaultContent := (print "搜尋" .Title ) }}
+                {{ .Content | default $defaultContent }}
+            </h1>
+            <div class="flex gap-12 mx-8 mb-8">
+                {{ partial "partials/Atom-btn.html" (dict "content" "聯絡我們" "url" "/") . }}
+            </div>
+
+            <div class=""></div>
+        </div>
+        <div
+            id="project"
+            class="sticky top-0 lg:max-h-screen lg:overflow-y-auto h-max"
+            style="min-height:calc(100vh - var(--navbarMainHeight)*2)"
+        >
+            {{ partial "partials/Organism-ListProjectOption.html" . }}
+            {{ partial "partials/Organism-ListProjectGallery.html" . }}
+        </div>
+    </div>
+{{ end }}

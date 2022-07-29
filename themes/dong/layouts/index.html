@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <div class="grid grid-auto lg:grid-cols-2">
+        <div class="h-screen border-r width xs:h-auto border-stone-200">
+            <div class="relative z-10">
+                <h1 class="p-8 text-2xl leading-relaxed prose">
+                    {{ .Content }}
+                </h1>
+                <div class="flex gap-12 mx-8 mb-8">
+                    {{ partial "partials/Atom-btn.html" (dict "content" "關於我們" "url" "/about") . }}
+                    {{ partial "partials/Atom-btn.html" (dict "content" "觀看作品" "url" "/project") . }}
+                </div>
+            </div>
+
+            <canvas class="absolute top-0 left-0" id="matterIndex"></canvas>
+        </div>
+
+        <div>
+            {{ partial "partials/Organism-ListProject-index.html" . }}
+            {{ partial "partials/Organism-ListPost-index.html" . }}
+        </div>
+    </div>
+{{ end }}
