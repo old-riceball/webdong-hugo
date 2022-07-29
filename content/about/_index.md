@@ -10,7 +10,7 @@ cover:
       width: 1200
       height: 921
 
-heading: 相信親切直擊需求的設計勝過千言萬語。我們的工作就是搭建溝通的橋樑，拉近您與客戶的距離。
+heading: 第一手網頁設計開發教學集
 
 infos:
     about:
