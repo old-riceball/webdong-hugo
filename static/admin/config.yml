@@ -8,7 +8,6 @@ public_folder: /img
 local_backend: true
 
 # CMS Decoration
-display_url: { { .Site.Params.brandUrl } }
 locale: 'zh_Hant'
 
 media_library:
