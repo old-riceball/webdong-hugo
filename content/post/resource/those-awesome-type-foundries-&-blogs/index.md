@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Those Awesome Type Foundries & blogs
-titletc: 那些有趣的文字部落格
+titletc: 給網站設計師的字型知識資源補包
 thumbnail:
     src:
         - https://res.cloudinary.com/tridong/image/upload/v1654515985/global/%E4%B8%89%E8%A7%92%E6%9D%B1%E6%9D%B1-%E5%93%81%E7%89%8C%E5%B1%95%E7%A4%BA%E5%B0%81%E9%9D%A2.png
