@@ -39,16 +39,18 @@ author:
 
 ## Adobe Fonts - Adobe 全家桶服務
 
-{{< image width="600" height="315" src="https://res.cloudinary.com/webdong/image/upload/v1654544345/post/where-to-find-awesome-fonts/AdobeFont.jpg" alt="Adobe Fonts Logo">}}
+{{< image width="1903" height="951" src="https://res.cloudinary.com/webdong/image/upload/v1659201117/post/where-to-find-awesome-fonts/AdobeFonts.png" alt="Adobe Fonts Logo">}}
 
 [Adobe Fonts](https://fonts.adobe.com/) 前生為「Typekit」是 Adobe 的一項線上服務，提供簡化的字體版權。更重要的是由於是 Adobe 推出的，只要有訂閱 Creative Cloud，可以在網站中登入帳號，點擊一下就可以把你喜愛的字體搬到 Adobe 提供的軟體服務，如：Illustrator、Photoshop 中使用。
+
+在繁中字體上有「文鼎明體」、｢Adobe 繁黑體」、｢文鼎 UD 晶熙黑體
 
 -   操作說明：[在 Creative Cloud 應用程式中使用 Adobe Fonts](https://helpx.adobe.com/tw/creative-cloud/help/add-fonts.html)
 -   網站連結：[Adobe Font](https://fonts.adobe.com/)
 
 ## 字嗨 - 繁體中文免費字型列表
 
-{{< image width="1200" height="600" src="https://res.cloudinary.com/webdong/image/upload/v1655306581/post/where-to-find-awesome-fonts/%E5%AD%97%E5%97%A8%E7%B6%B2%E7%AB%99.png" alt="字嗨網站截圖"  >}}
+{{< image width="1903" height="951" src="https://res.cloudinary.com/webdong/image/upload/v1655306581/post/where-to-find-awesome-fonts/%E5%AD%97%E5%97%A8%E7%B6%B2%E7%AB%99.png" alt="字嗨網站截圖"  >}}
 
 [字嗨](https://zi-hi.com/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E5%85%8D%E8%B2%BB%E5%AD%97%E5%9E%8B%E5%88%97%E8%A1%A8)，是一個網站由臉書同名社團所搭建的知識庫網站，整理各種字型相關資訊、技術知識。此外[字嗨 Fb 社團](https://www.facebook.com/groups/enjoyfonts/)差不多也是是台灣最大的字體、字型討論社團
 
