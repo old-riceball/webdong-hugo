@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Those Awesome Type Foundries & blogs
 titletc: 給網站設計師的字型知識資源補包
 thumbnail:
