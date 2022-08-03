@@ -17,7 +17,7 @@ tag:
     - 心得
 author:
     - name: 飯糰
-      image: https://res.cloudinary.com/tridong/image/upload/v1654503496/global/%E9%BB%83%E5%AE%97%E7%91%8B-%E9%A0%AD%E5%83%8F.jpg
+      image: https://res.cloudinary.com/webdong/image/upload/v1659485626/global/riceball.png
 ---
 
 ## 前言
