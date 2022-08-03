@@ -21,7 +21,7 @@ tag:
     - 檔案
 author:
     - name: 飯糰
-      image: https://res.cloudinary.com/webdong/image/upload/v1659485626/global/riceball.png
+      image: https://res.cloudinary.com/webdong/image/upload/v1659486489/global/riceball.png
 ---
 
 ## 為什麼需要管理檔案？

@@ -4,8 +4,11 @@ languageCode = 'en-us'
 
 # Params
 [Params]
+navBrand = 'WebDong.dev'
+navBrandShort = 'WebDong'
+
 brand = 'WebDong'
-brandtc = '網頁東東'
+brandtc = 'WebDong.dev'
 brandLogo = '◢◢◢'
 brandUrl = 'https://www.webdong.dev/'
 brandUrlShort = 'https://www.instagram.com/webdong.dev'
