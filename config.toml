@@ -29,6 +29,10 @@ brandBehance = ''
 slogan = "專業的角度有趣地玩網頁"
 brandDescription = "網頁東東 Webdong.dev  是一個專注於協助你開發網頁的助手。 "
 
+utteranceRepo = "riceball-tw/web-dong-dong"
+utteranceIssueTerm = "pathname"
+utteranceLabel = "💬"
+utteranceTheme = "github-light"
 
 # Pagination
 paginate = 10

@@ -49,3 +49,7 @@ Justfont 可以說是從第一款募資產品就牢牢抓住現代台灣字體�
 [Typewolf](https://www.typewolf.com/) 是一個由 [Jeremiah Shoaf](https://www.jeremiahshoaf.com/) 的獨立運作的字體資源集合網站，每個月都有超過 350,000 以上的造訪人次。其中紀載了各式網站字體的合輯，像是「[前十黑體字型](https://www.typewolf.com/top-10-sans-serif-fonts)」、「[前十粗獷主義字型](https://www.typewolf.com/top-10-brutalist-fonts)」、「[前十 Helvetica 替代字型](https://www.typewolf.com/top-10-helvetica-alternatives)」、「[前 40 最喜愛的設計師網頁文字作品集](https://www.typewolf.com/portfolio-sites)」……詳細可以參考這個有趣的[字體清單](https://www.typewolf.com/recommendations)。
 
 網站中清晰的提供了字體在網頁上的使用範例，供網頁設計師對於下個專案在字體上的選用有個更好的想像。
+
+## 總結
+
+其實從網站上可以看見非常多舊時代的
