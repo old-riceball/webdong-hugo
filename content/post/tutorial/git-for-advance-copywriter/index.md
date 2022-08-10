@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Git for advance copywriter
 titletc: 給現代文字工作者簡單易懂的 Git 教學
 thumbnail:
@@ -41,12 +41,12 @@ author:
 你可能就會會碰上麻煩，為了備份，要重複的複製貼上相同的檔案，每一次！造成了以下的問題。
 
 -   佔用大量的硬碟空間。
--   沒辦法回顧甚至回朔檔案。
+-   沒辦法回顧或回朔檔案。
 -   沒辦法讓不同人各自對同一個檔案進行編輯。
 
-## 提供什麼好處、為什麼需要它們？
+## 提供什麼好處、為什麼需要 Git？
 
-而 Git 就是因應這樣的問題而誕生的一款*軟體*，它會記錄下每一次文件在編輯後的更動內容，並讓你輕鬆的回顧或回朔，與其他人分享或同步進度，造就了：
+而 Git 就是因應這樣的問題而誕生的一款 [分散式版本控制](https://zh.wikipedia.org/zh-tw/%E5%88%86%E6%95%A3%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6) 軟體，它會記錄下每一次文件在編輯後的更動內容，並讓你輕鬆的回顧或回朔，與其他人分享或同步進度，造就了：
 
 -   使用更少量的空間達成備份目的
 -   更好的文件撰寫體驗
@@ -55,6 +55,8 @@ author:
 這也是為什麼軟體開發領域中，學習 Git 是不可少的一項技能，也是最常被提及的一項基本技術。
 
 ## Git 與 GitHub 是什麼？
+
+了解了為什麼需要 Git 後，可能會很常聽到 GitHub、GitLab……等服務，那是什麼意思？
 
 ### Git
 
@@ -78,4 +80,8 @@ GitHub 是微軟提供的一項服務，線上存放 Git 的地方。
 
 以上簡單說明完 Git 與 GitHub 之間的關係，讓我們使用本地端的 Git 創建一個「圖書館」並在裡面編寫，藉由簡單的文件來快速入門。
 
-1. 先到 [Git](https://git-scm.com/) 的官方網站下載。
+1. 先到 [Git](https://git-scm.com/) 的官方網站下載最新的 Git。
+
+{{< image width="1903" height="951" src="https://res.cloudinary.com/webdong/image/upload/v1660139786/post/git-for-advance-copywriter/Git.png" alt="Git 官方網頁">}}
+
+2.

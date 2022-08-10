@@ -48,6 +48,8 @@ author:
 
 {{< image width="1903" height="951" src="https://res.cloudinary.com/webdong/image/upload/v1660137377/post/quick-tools-for-front-end-dev/Responsive-Image-Breakpoints-Generator.png" alt="Responsive Image Breakpoints Generator 網頁">}}
 
+{{< image width="1903" height="951" src="https://res.cloudinary.com/webdong/image/upload/v1660138092/post/quick-tools-for-front-end-dev/Responsive-Image-Breakpoints-Generator-ImageSize.png" alt="Respimagelint 網頁">}}
+
 [Responsive Image Breakpoints Generator](https://www.responsivebreakpoints.com/) 是一個網頁可以幫助前端開發者更快速的撰寫和規、可自訂的響應式圖片標籤，只要輸入以下需求。
 
 1. 解析度範圍 (Resolution)
